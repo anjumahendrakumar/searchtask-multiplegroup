@@ -1,1 +1,0 @@
-# searchtask-multiplegroup
