@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "searchEngine": "https://www.google.com",
+    "timeout": 30000,
+    "retries": 2
+  },
+  "testData": {
+    "searchQueries": [
+      {
+        "term": "Valletta",
+        "expectedKeywords": ["Malta", "capital", "city", "UNESCO", "heritage"]
+      },
+      {
+        "term": "The Multiple",
+        "expectedKeywords": ["Malta", "events", "center"]
+      },
+      {
+        "term": "Ftira",
+        "expectedKeywords": ["Maltese", "bread", "traditional", "food"]
+      }
+    ]
+  },
+  "validation": {
+    "minResultCount": 3,
+    "screenshotPath": "evidence",
+    "reportFormat": "detailed"
+  }
+}

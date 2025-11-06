@@ -1,0 +1,53 @@
+{
+  "name": "automated-search-testing-suite",
+  "version": "3.1.0",
+  "description": "Enterprise-grade automated testing suite for search engine functionality validation using advanced Playwright automation",
+  "main": "tests/search-validation.spec.js",
+  "scripts": {
+    "validate": "npx playwright test --ui",
+    "validate:silent": "npx playwright test",
+    "validate:trace": "npx playwright test --trace on",
+    "validate:specific": "npx playwright test --grep",
+    "validate:json": "npx playwright test --reporter=json",
+    "show:results": "npx playwright show-report",
+    "open:report": "npx playwright show-report test-results",
+    "setup:browsers": "npx playwright install",
+    "format": "eslint . --ext .js --fix",
+    "check:format": "eslint . --ext .js",
+    "cleanup": "rimraf test-results playwright-report evidence"
+  },
+  "keywords": [
+    "search-validation",
+    "web-testing",
+    "playwright-framework",
+    "automated-validation",
+    "search-engine-testing",
+    "end-to-end-validation",
+    "test-framework",
+    "search-automation"
+  ],
+  "author": {
+    "name": "Test Automation Specialist",
+    "email": "testing@webvalidation.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/automated-search-testing-suite"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {},
+  "type": "module",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions"
+  ]
+}
